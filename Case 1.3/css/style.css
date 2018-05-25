@@ -1,0 +1,345 @@
+/* Global */
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+header{
+	background-color: black;
+}
+
+	.menu {
+    margin: 0 30px 0 0;
+}
+	.menu a {
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+	font-size: 24px;
+}
+.læs-mere-button{
+		font-size: 20px;
+		text-align: center;
+		border: none;
+		padding: 8px;
+		width: 100%;
+		background-color: #ffdf00;
+	}
+.border-box {
+		border-style: solid;
+		padding: 10px;
+		margin-bottom: 2%;
+		}
+    footer {
+        display: none;
+    }
+
+/* Mobile First op til 767px */
+@media (max-width: 767px){
+	.burgermenu{
+		display: flex;
+	}
+	
+	
+	#toggle {
+    	display: none;
+	}
+	
+	#logo{
+		width: 90%;
+		margin-top: 3%;
+		margin-left: 5%;
+	}
+
+    label {
+        cursor: pointer;
+		color: white;
+		font-size: 40px;
+		margin: 25%;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+     
+    }
+	
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    
+    
+    /* index main content */
+    
+    
+    
+    .container {
+		padding: 5%;
+	}
+	
+	.title {
+		text-align: center;
+		font-size: 30px;
+		margin-top: -2%;
+	}
+	.billedegalleri-title {
+		text-align: center;
+		font-size: 30px;
+		}
+	
+	
+	.katedral-pic {
+		width: 100%;
+		border-radius: 8px;
+	}
+	
+	.billede-flexbox {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	
+	.billedgalleri {
+		width: 100%;
+		margin-bottom: 3%;
+		border-radius: 3px;
+	}
+	#billedgalleri {
+		width: 100%;
+		border-radius: 3px;
+		opacity: 0.3;
+	}
+	#se-flere {
+		position: absolute;
+		margin: 20% 0 0 28%;
+		font-size: 35px;
+	}
+    
+    
+    
+    /* nye elever main content */
+    
+    .box{
+        width: 100%;
+        background-color: #ffdf00;
+        padding: 1px;
+    }
+    
+    #ansøgning{
+        text-align: center;
+    }
+    
+    
+    .fagområder {
+        text-align: center;
+        
+    }
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffdf00;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    
+    
+    /* events main content */
+    
+    
+    .events{
+        width: 100%;
+		border-radius: 8px;
+		
+    }
+    
+    
+    
+    /* om skolen main content */
+    
+    .kontaktpersoner-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .kontaktinfo{
+        margin-top: 60px;
+    }
+    
+    .maps{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 8px;
+        
+    }
+    #placering{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+/* Ipad fra 768px */
+@media (min-width: 768px){
+	
+		#logo{
+		width: 100%;
+	}
+	
+	.menu{
+		text-align: center;
+	}
+	
+	.menu a{
+		font-size: 30px;
+		border: 2px solid white;
+		margin-right: 10px;
+		padding: 10px;
+	}
+	
+	.menu a:hover{
+		background: #ffdf00;
+	}
+	
+	label{
+		display: none;
+	}
+	
+	#toggle{
+		display: none;
+	}
+	
+		.container{
+		padding: 0 2% 0 2%;
+	}
+    /* Forside nyheder */
+    .katedral-pic {
+        display: none;
+	}
+    .grid-nyheder {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+        grid-column-gap: 10px;
+
+    }
+    h1 {
+        font-size: 400%
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    
+    /* Forside Billedegalleri */
+    .container-billedegalleri {
+		display: flex;
+		flex-direction: row;
+        justify-content: space-between;
+	}
+	.billedgalleri {
+		width: 95%;
+		margin-bottom: 3%;
+		border-radius: 3px;
+	}
+	#billedgalleri {
+		width: 95%;
+		border-radius: 3px;
+		opacity: 0.3;
+	}
+	#se-flere {
+        position: absolute;
+		margin: -10% 0 0 9%;
+		font-size: 35px;
+	}
+    /* Kontakt */
+    .kontakt-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .kontaktpersoner-flex {
+        padding: 5px;
+        border-style: solid;
+        border-radius: 5px;
+    }
+    .maps {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}
+
+/* Fra 1024 px - Desktop */	
+@media (min-width: 1024px){
+	
+	.menu a{
+		font-size: 45px;
+		margin-right: 30px;
+		padding: 3px;
+}
+	.container{
+		padding: 0 5% 0 5%;
+	}
+
+	 footer {
+        padding-left: 1rem;
+        background-color: black;
+        text-align: center;
+        display: block;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        margin: 7px;
+        color: white;
+    }
+    footer h2 {
+        color: white;
+        margin: 5px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 2fr 7fr 274px;
+    }
+	
+    .instagram {
+        width: 70px;
+    }
+}
+
